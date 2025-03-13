@@ -96,12 +96,12 @@ const CreateTournament = () => {
           width: '100%',
         }}
       >
-        <div style={{ padding: '20px', maxWidth: '600px', margin: 'auto' }}>
-          <h2 style={{ color: 'black' }}>Create Tournament</h2>
+        <div style={{ padding: '20px', maxWidth: '600px', margin: 'auto'}}>
+          <h2 style={{color:'black'}}>Create Tournament</h2>
           <form onSubmit={handleSubmit}>
             {/* Tournament Title */}
             <div style={{ marginBottom: '15px' }}>
-              <label style={{ color: 'black' }}>Title</label>
+              <label style={{color:'black'}}>Title</label>
               <input
                 type="text"
                 name="title"
@@ -112,7 +112,7 @@ const CreateTournament = () => {
                   padding: '10px',
                   borderRadius: '5px',
                   border: '1px solid #ccc',
-                  color: 'white',
+                  color: 'white'
                 }}
               />
               {errors.title && <p style={{ color: 'red' }}>{errors.title}</p>}
@@ -120,7 +120,7 @@ const CreateTournament = () => {
 
             {/* Description */}
             <div style={{ marginBottom: '15px' }}>
-              <label style={{ color: 'black' }}>Description</label>
+              <label style={{color:'black'}}>Description</label>
               <textarea
                 name="description"
                 value={tournamentData.description}
@@ -139,7 +139,7 @@ const CreateTournament = () => {
 
             {/* Date */}
             <div style={{ marginBottom: '15px' }}>
-              <label style={{ color: 'black' }}>Date</label>
+              <label style={{color:'black'}}>Date</label>
               <input
                 type="date"
                 name="date"
@@ -157,7 +157,7 @@ const CreateTournament = () => {
 
             {/* Time */}
             <div style={{ marginBottom: '15px' }}>
-              <label style={{ color: 'black' }}>Time</label>
+              <label style={{color:'black'}}>Time</label>
               <input
                 type="time"
                 name="time"
@@ -175,7 +175,7 @@ const CreateTournament = () => {
 
             {/* Max Players */}
             <div style={{ marginBottom: '15px' }}>
-              <label style={{ color: 'black' }}>Max Players Per Team</label>
+              <label style={{color:'black'}}>Max Players</label>
               <input
                 type="number"
                 name="maxPlayers"
@@ -195,7 +195,7 @@ const CreateTournament = () => {
 
             {/* Categories */}
             <div style={{ marginBottom: '15px' }}>
-              <label style={{ color: 'black' }}>Categories</label>
+              <label style={{color:'black'}}>Categories</label>
               {tournamentData.categories.map((category, index) => (
                 <div
                   key={index}
@@ -264,7 +264,7 @@ const CreateTournament = () => {
 
             {/* Tournament Image Upload */}
             <div style={{ marginBottom: '15px' }}>
-              <label style={{ color: 'black' }}>Upload Tournament Image</label>
+              <label style={{color:'black'}}>Upload Tournament Image</label>
               <input
                 type="file"
                 onChange={handleFileChange}
