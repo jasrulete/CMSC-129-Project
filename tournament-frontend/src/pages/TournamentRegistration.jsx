@@ -106,14 +106,15 @@ const TournamentRegistration = () => {
           boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
           maxWidth: '400px',
           width: '100%',
+          color:'black'
         }}
       >
-        <h2 style={{ textAlign: 'center', marginBottom: '20px', color: '#000' }}>
+        <h2 style={{ textAlign: 'center', marginBottom: '20px', }}>
           Tournament Registration
         </h2>
         <form onSubmit={handleSubmit}>
           {/* Registration Type */}
-          <div style={{ marginBottom: '15px', color: '#000' }}>
+          <div style={{ marginBottom: '15px', }}>
             <label>Registration Type</label>
             <select
               name="registrationType"
@@ -136,7 +137,7 @@ const TournamentRegistration = () => {
           {formData.registrationType === 'single' && (
             <>
               {/* Full Name */}
-              <div style={{ marginBottom: '15px', color: '#000' }}>
+              <div style={{ marginBottom: '15px',  }}>
                 <label>Full Name</label>
                 <input
                   type="text"
@@ -155,7 +156,7 @@ const TournamentRegistration = () => {
               </div>
 
               {/* Email */}
-              <div style={{ marginBottom: '15px', color: '#000' }}>
+              <div style={{ marginBottom: '15px', }}>
                 <label>Email</label>
                 <input
                   type="email"
@@ -174,7 +175,7 @@ const TournamentRegistration = () => {
               </div>
 
               {/* Phone */}
-              <div style={{ marginBottom: '15px', color: '#000' }}>
+              <div style={{ marginBottom: '15px',  }}>
                 <label>Phone Number</label>
                 <input
                   type="tel"
@@ -198,7 +199,7 @@ const TournamentRegistration = () => {
           {formData.registrationType === 'team' && (
             <>
               {/* Team Name */}
-              <div style={{ marginBottom: '15px', color: '#000' }}>
+              <div style={{ marginBottom: '15px', }}>
                 <label>Team Name</label>
                 <input
                   type="text"
@@ -217,7 +218,7 @@ const TournamentRegistration = () => {
               </div>
 
               {/* Number of Participants */}
-              <div style={{ marginBottom: '15px', color: '#000' }}>
+              <div style={{ marginBottom: '15px',  }}>
                 <label>Number of Participants</label>
                 <input
                   type="number"
@@ -236,7 +237,7 @@ const TournamentRegistration = () => {
               </div>
 
               {/* Players Information */}
-              <div style={{ marginBottom: '15px', color: '#000' }}>
+              <div style={{ marginBottom: '15px', }}>
                 <label>Players</label>
                 {formData.players.map((player, index) => (
                   <div key={index} style={{ marginBottom: '10px' }}>

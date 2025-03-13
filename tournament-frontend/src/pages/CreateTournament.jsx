@@ -96,12 +96,12 @@ const CreateTournament = () => {
           width: '100%',
         }}
       >
-        <div style={{ padding: '20px', maxWidth: '600px', margin: 'auto'}}>
+        <div style={{ padding: '20px', maxWidth: '600px', margin: 'auto', color:'black'}}>
           <h2 style={{color:'black'}}>Create Tournament</h2>
           <form onSubmit={handleSubmit}>
             {/* Tournament Title */}
             <div style={{ marginBottom: '15px' }}>
-              <label style={{color:'black'}}>Title</label>
+              <label>Title</label>
               <input
                 type="text"
                 name="title"
@@ -112,7 +112,7 @@ const CreateTournament = () => {
                   padding: '10px',
                   borderRadius: '5px',
                   border: '1px solid #ccc',
-                  color: 'white'
+                  background:'white'
                 }}
               />
               {errors.title && <p style={{ color: 'red' }}>{errors.title}</p>}
@@ -130,6 +130,7 @@ const CreateTournament = () => {
                   padding: '10px',
                   borderRadius: '5px',
                   border: '1px solid #ccc',
+                  background:'white'
                 }}
               />
               {errors.description && (
@@ -150,6 +151,8 @@ const CreateTournament = () => {
                   padding: '10px',
                   borderRadius: '5px',
                   border: '1px solid #ccc',
+                  background:'white',
+                  // color:'black'
                 }}
               />
               {errors.date && <p style={{ color: 'red' }}>{errors.date}</p>}
@@ -168,6 +171,8 @@ const CreateTournament = () => {
                   padding: '10px',
                   borderRadius: '5px',
                   border: '1px solid #ccc',
+                  background:'white',
+                  // color:'black'
                 }}
               />
               {errors.time && <p style={{ color: 'red' }}>{errors.time}</p>}
@@ -186,6 +191,7 @@ const CreateTournament = () => {
                   padding: '10px',
                   borderRadius: '5px',
                   border: '1px solid #ccc',
+                  background:'white'
                 }}
               />
               {errors.maxPlayers && (
@@ -213,6 +219,7 @@ const CreateTournament = () => {
                       borderRadius: '5px',
                       border: '1px solid #ccc',
                       marginRight: '2%',
+                      background:'white'
                     }}
                   />
                   <input
@@ -226,6 +233,7 @@ const CreateTournament = () => {
                       padding: '10px',
                       borderRadius: '5px',
                       border: '1px solid #ccc',
+                      background:'white'
                     }}
                   />
                   <button

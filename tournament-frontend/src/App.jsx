@@ -5,6 +5,7 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import TournamentRegistration from './pages/TournamentRegistration';
 import CreateTournament from './pages/CreateTournament';
+import TournamentBracket from './pages/TournamentPage';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -21,6 +22,10 @@ function App() {
             <Route
               path="/create-tournament"
               element={<CreateTournament />}
+            />
+            <Route
+              path="/tournament-page"
+              element={<TournamentBracket />}
             />
           </Routes>
         </Router>
